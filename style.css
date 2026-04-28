@@ -1,0 +1,225 @@
+body{
+background: linear-gradient(
+rgba(0,0,0,0.75),
+rgba(20,20,20,0.80)
+),
+url(chat.jpg);
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+margin: 0;
+padding: 0;
+}
+.container{
+display: flex;
+justify-content: space-between;
+gap: 40px;
+padding: 10px;
+}
+.box{
+flex: 1;
+border-radius: 25px;
+padding: 20px;
+background: rgba(192, 192, 192, 0.275);
+margin: 20px 20px 20px;
+box-shadow: 2px 2px 10px black;
+height: 400px;
+transition: 0.5s;
+backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+}
+.box:hover {
+transform: scale(0.9)   ;
+box-shadow: 0px 0px 10px rgba(255, 217, 0, 0.638),
+0px 0px 20px rgba(255, 217, 0, 0.779),
+0px 0px 30px gold;       
+}
+.middle{
+flex: 1.2;
+}
+.id{
+text-align: center;
+font-size: x-large;
+font-weight: bold;
+font-family: "Frijole", system-ui;
+}
+a{
+text-decoration: none;
+font-weight: bold;
+}
+.face{
+color:  #1877F2;
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 15px 0;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.face:hover{
+  transform: scaleY(3) ;
+}
+.insta{ 
+color:#C13584 ;
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 15px 0;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.insta:hover{
+  transform: scaleY(3) ;
+}
+.x{
+color:  #1DA1F2;
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 15px 0;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.x:hover{
+  transform: scaleY(3) ;
+}
+nav{
+background: linear-gradient(rgba(0, 0, 0, 0.508));
+padding: 20px;
+}
+ul{
+display: flex;
+justify-content: center;
+gap: 40px;
+}
+li{
+list-style: none;
+}
+.theme{
+font-size: 25px;
+font-weight: bold;
+color: white;
+position: relative;
+ font-family: "Shojumaru", system-ui;
+}
+.theme::after{
+width: 0px;
+height: 2px;
+left: 0;
+bottom:-5px;
+position: absolute;
+content: "";
+transition: 0.4s;
+background: gold;
+}
+.theme:hover::after{
+width: 100%;
+}
+.theme:hover{
+color: gold;
+transform: scale(1.2) translateX(-5px) ;
+text-shadow: 0 0 10px gold;    
+}
+footer{
+font-weight: bold;
+color: white;
+font-size: 20px;
+background:linear-gradient(rgba(0, 0, 0, 0.508));
+padding: 20px;
+text-align: center;    
+margin-top: -15px;
+}
+input{
+  border-radius: 9px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.595),
+0px 0px 20px rgba(0, 0, 0, 0.768),
+0px 0px 30px black;       
+  transition: 0.3;
+  font-size: large;
+}
+input[type="submit"]{
+  background: rgba(0, 0, 0, 0.658) ;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+textarea{
+   border-radius: 9px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.595),
+0px 0px 20px rgba(0, 0, 0, 0.768),
+0px 0px 30px black;       
+  transition: 0.3;
+  font-size: large;
+}
+input:focus,textarea:focus{
+  transform: scale(1.06);
+  box-shadow: 0px 0px 10px rgba(255, 217, 0, 0.638),
+0px 0px 20px rgba(255, 217, 0, 0.779),
+0px 0px 30px gold;       
+}
+#themebtn{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#deznytheme{
+  padding: 10px 10px;
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 18px;
+   font-family: "Shojumaru", system-ui;
+
+}
+#deznytheme:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(255, 217, 0, 0.638),
+0px 0px 20px rgba(255, 217, 0, 0.779),
+0px 0px 30px gold;       
+}
+.light-mode{
+  background: linear-gradient(
+rgba(0,0,0,0.75),
+rgba(20,20,20,0.80)
+),
+url(chat.jpg);
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+margin: 0;
+padding: 0;
+}
+.light-mode .theme{
+  color: black;
+}
+.light-mode nav{
+  background: rgba(255, 255, 255, 0.395);
+
+}
+.light-mode .box{
+background: rgba(255, 255, 255, 0.395);
+margin: 20px 20px 20px;
+box-shadow: 2px 2px 10px black;
+height: 400px;
+transition: 0.5s;
+backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);  
+}
+.light-mode .box:hover{
+  box-shadow: 0px 0px 10px rgba(255, 217, 0, 0.638),
+0px 0px 20px rgba(255, 217, 0, 0.779),
+0px 0px 30px gold;     
+}
+.light-mode footer{
+  background: rgba(255, 255, 255, 0.395);
+color: black;
+}
+.light-mode input , .light-mode textarea{
+  background: rgba(255, 255, 255, 0.395);
+  color: black;
+}
